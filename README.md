@@ -1,3 +1,0 @@
-# Vazir.io
-
-In Progress
