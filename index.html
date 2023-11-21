@@ -1,279 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Global</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>Global</p>
-  </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
-          </a>
-          <button class="header--cta cta">Hire Us</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Your next<br>interactive<br>experience</h1>
-                <button class="cta">Hire Us
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>Metiew &amp; Smith</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Fantasy interactive</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Paul &amp; shark</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Selected work</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Victory</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">Metiew &amp; Smith</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Alex Nowak</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>We<br>believe in<br>passionate<br>people</h2>
-                <a href="#0">Career
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a>
-                <img src="assets/img/about-visual.png" alt="About Us">
-              </div>
-              <div class="about--options">
-                <a href="#0">
-                  <h3>Winners</h3>
-                </a>
-                <a href="#0">
-                  <h3>Philosophy</h3>
-                </a>
-                <a href="#0">
-                  <h3>History</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>Pawia 5, 31-154 Kraków, Poland</p>
-                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                    <a href="tel:+148126287560">+48 12 628 75 60</a>
-                  </div>
-                  <ul class="modal--options">
-                    <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li>
-                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>You want us to do</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      App Design
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Graphic Design
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Motion Design
-                    </label>
-                  </span>
-                  <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      UX Design
-                    </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Marketing
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
-              </form>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Works</li>
-    <li>About</li>
-    <li>Contact</li>
-    <li>Hire us</li>
-  </ul>
-</div>
+      body {
+        background-color: #007aff;
+        color: #fff;
+        font-size: 100%;
+        line-height: 1.5;
+        font-family: "Roboto", sans-serif;
+      }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
-</body>
+      .button {
+        font-weight: 300;
+        color: #fff;
+        font-size: 1.2em;
+        text-decoration: none;
+        border: 1px solid #efefef;
+        padding: 0.5em;
+        border-radius: 3px;
+        float: left;
+        margin: 6em 0 0 -155px;
+        left: 50%;
+        position: relative;
+        transition: all 0.3s linear;
+      }
+
+      .button:hover {
+        background-color: #007aff;
+        color: #fff;
+      }
+
+      p {
+        font-size: 2em;
+        text-align: center;
+        font-weight: 100;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 15em;
+        font-weight: 100;
+        text-shadow: #0062cc 1px 1px, #0062cc 2px 2px, #0062cc 3px 3px,
+          #0062cd 4px 4px, #0062cd 5px 5px, #0062cd 6px 6px, #0062cd 7px 7px,
+          #0062ce 8px 8px, #0063ce 9px 9px, #0063ce 10px 10px, #0063ce 11px 11px,
+          #0063cf 12px 12px, #0063cf 13px 13px, #0063cf 14px 14px,
+          #0063cf 15px 15px, #0063d0 16px 16px, #0064d0 17px 17px,
+          #0064d0 18px 18px, #0064d0 19px 19px, #0064d1 20px 20px,
+          #0064d1 21px 21px, #0064d1 22px 22px, #0064d1 23px 23px,
+          #0064d2 24px 24px, #0065d2 25px 25px, #0065d2 26px 26px,
+          #0065d2 27px 27px, #0065d3 28px 28px, #0065d3 29px 29px,
+          #0065d3 30px 30px, #0065d3 31px 31px, #0065d4 32px 32px,
+          #0065d4 33px 33px, #0066d4 34px 34px, #0066d4 35px 35px,
+          #0066d5 36px 36px, #0066d5 37px 37px, #0066d5 38px 38px,
+          #0066d5 39px 39px, #0066d6 40px 40px, #0066d6 41px 41px,
+          #0067d6 42px 42px, #0067d6 43px 43px, #0067d7 44px 44px,
+          #0067d7 45px 45px, #0067d7 46px 46px, #0067d7 47px 47px,
+          #0067d8 48px 48px, #0067d8 49px 49px, #0068d8 50px 50px,
+          #0068d9 51px 51px, #0068d9 52px 52px, #0068d9 53px 53px,
+          #0068d9 54px 54px, #0068da 55px 55px, #0068da 56px 56px,
+          #0068da 57px 57px, #0068da 58px 58px, #0069db 59px 59px,
+          #0069db 60px 60px, #0069db 61px 61px, #0069db 62px 62px,
+          #0069dc 63px 63px, #0069dc 64px 64px, #0069dc 65px 65px,
+          #0069dc 66px 66px, #006add 67px 67px, #006add 68px 68px,
+          #006add 69px 69px, #006add 70px 70px, #006ade 71px 71px,
+          #006ade 72px 72px, #006ade 73px 73px, #006ade 74px 74px,
+          #006bdf 75px 75px, #006bdf 76px 76px, #006bdf 77px 77px,
+          #006bdf 78px 78px, #006be0 79px 79px, #006be0 80px 80px,
+          #006be0 81px 81px, #006be0 82px 82px, #006be1 83px 83px,
+          #006ce1 84px 84px, #006ce1 85px 85px, #006ce1 86px 86px,
+          #006ce2 87px 87px, #006ce2 88px 88px, #006ce2 89px 89px,
+          #006ce2 90px 90px, #006ce3 91px 91px, #006de3 92px 92px,
+          #006de3 93px 93px, #006de3 94px 94px, #006de4 95px 95px,
+          #006de4 96px 96px, #006de4 97px 97px, #006de4 98px 98px,
+          #006de5 99px 99px, #006ee5 100px 100px, #006ee5 101px 101px,
+          #006ee6 102px 102px, #006ee6 103px 103px, #006ee6 104px 104px,
+          #006ee6 105px 105px, #006ee7 106px 106px, #006ee7 107px 107px,
+          #006ee7 108px 108px, #006fe7 109px 109px, #006fe8 110px 110px,
+          #006fe8 111px 111px, #006fe8 112px 112px, #006fe8 113px 113px,
+          #006fe9 114px 114px, #006fe9 115px 115px, #006fe9 116px 116px,
+          #0070e9 117px 117px, #0070ea 118px 118px, #0070ea 119px 119px,
+          #0070ea 120px 120px, #0070ea 121px 121px, #0070eb 122px 122px,
+          #0070eb 123px 123px, #0070eb 124px 124px, #0071eb 125px 125px,
+          #0071ec 126px 126px, #0071ec 127px 127px, #0071ec 128px 128px,
+          #0071ec 129px 129px, #0071ed 130px 130px, #0071ed 131px 131px,
+          #0071ed 132px 132px, #0071ed 133px 133px, #0072ee 134px 134px,
+          #0072ee 135px 135px, #0072ee 136px 136px, #0072ee 137px 137px,
+          #0072ef 138px 138px, #0072ef 139px 139px, #0072ef 140px 140px,
+          #0072ef 141px 141px, #0073f0 142px 142px, #0073f0 143px 143px,
+          #0073f0 144px 144px, #0073f0 145px 145px, #0073f1 146px 146px,
+          #0073f1 147px 147px, #0073f1 148px 148px, #0073f1 149px 149px,
+          #0074f2 150px 150px, #0074f2 151px 151px, #0074f2 152px 152px,
+          #0074f3 153px 153px, #0074f3 154px 154px, #0074f3 155px 155px,
+          #0074f3 156px 156px, #0074f4 157px 157px, #0074f4 158px 158px,
+          #0075f4 159px 159px, #0075f4 160px 160px, #0075f5 161px 161px,
+          #0075f5 162px 162px, #0075f5 163px 163px, #0075f5 164px 164px,
+          #0075f6 165px 165px, #0075f6 166px 166px, #0076f6 167px 167px,
+          #0076f6 168px 168px, #0076f7 169px 169px, #0076f7 170px 170px,
+          #0076f7 171px 171px, #0076f7 172px 172px, #0076f8 173px 173px,
+          #0076f8 174px 174px, #0077f8 175px 175px, #0077f8 176px 176px,
+          #0077f9 177px 177px, #0077f9 178px 178px, #0077f9 179px 179px,
+          #0077f9 180px 180px, #0077fa 181px 181px, #0077fa 182px 182px,
+          #0077fa 183px 183px, #0078fa 184px 184px, #0078fb 185px 185px,
+          #0078fb 186px 186px, #0078fb 187px 187px, #0078fb 188px 188px,
+          #0078fc 189px 189px, #0078fc 190px 190px, #0078fc 191px 191px,
+          #0079fc 192px 192px, #0079fd 193px 193px, #0079fd 194px 194px,
+          #0079fd 195px 195px, #0079fd 196px 196px, #0079fe 197px 197px,
+          #0079fe 198px 198px, #0079fe 199px 199px, #007aff 200px 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Vazir.io</h1>
+    <p>...سایت در حال بروزرسانی میباشد</p>
+  </body>
 </html>
