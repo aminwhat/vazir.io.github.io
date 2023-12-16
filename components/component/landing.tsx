@@ -161,9 +161,9 @@ export function Landing() {
                 <CardHeader>
                   <div className="flex items-center space-x-2">
                     <Avatar
-                      alt="Avatar"
                       className="w-10 h-10"
-                      src="/placeholder.svg?height=50&width=50"
+                      // src="/placeholder.svg?height=50&width=50"
+                      // alt="Avatar"
                     />
                     <div>
                       <CardTitle>John Doe</CardTitle>
