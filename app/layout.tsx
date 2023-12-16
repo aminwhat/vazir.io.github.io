@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "نرم افزار ابری وزیر",
   description: "Vazir Inc.",
+  applicationName: "Vazir",
+  authors: { name: "Vazir", url: "https://vazir.io" },
+  creator: "Vazir",
+  publisher: "Vazir",
 };
 
 export default function RootLayout({
