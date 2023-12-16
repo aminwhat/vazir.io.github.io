@@ -17,40 +17,40 @@ export function Landing() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
+        <Link className="flex items-center justify-center" href="/">
           <AppLogo className="h-6 w-6" />
-          <span className="sr-only">Finance Co.</span>
+          <span className="sr-only">Vazir Co.</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#"
           >
-            Features
+            ویژگی ها
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#"
           >
-            Pricing
+            قیمت ها
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#"
           >
-            Testimonials
+            گواهینامه ها
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#"
           >
-            About
+            درباره ما
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#"
           >
-            Contact
+            تماس با ما
           </Link>
         </nav>
       </header>
@@ -60,26 +60,26 @@ export function Landing() {
             <div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
               <div>
                 <h1 className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
-                  The Finance Platform For Every Business Need
+                  بستر مالی برای هر نیاز تجاری
                 </h1>
               </div>
               <div className="flex flex-col items-start space-y-4">
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Manage your finances, track your cash flow, send invoices, and
-                  more with our platform.
+                  با پلتفرم ما امور مالی خود را مدیریت کنید، جریان نقدی خود را
+                  پیگیری کنید، فاکتورها را ارسال کنید و موارد بسیار دیگر
                 </p>
                 <div className="space-x-4">
                   <Link
                     className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                     href="#"
                   >
-                    Get Started
+                    شروع کنید
                   </Link>
                   <Link
                     className="inline-flex h-9 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                     href="#"
                   >
-                    Learn More
+                    بیشتر بدانید
                   </Link>
                 </div>
               </div>
@@ -92,40 +92,40 @@ export function Landing() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                  Key Features
+                  ویژگی های کلیدی
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Transform Your Business With Our All-In-One Platform
+                  ما متحول کنید All-In-One کسب و کار خود را با پلتفرم
                 </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  From invoicing to expense tracking to accounting, our platform
-                  has all the tools you need to manage your money online, at
-                  your fingertips.
+                  از صورتحساب گرفته تا ردیابی هزینه و حسابداری، پلتفرم ما تمام
+                  ابزارهایی را که برای مدیریت آنلاین پول خود نیاز دارید، در
+                  اختیار شما قرار می دهد
                 </p>
               </div>
             </div>
             <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Easy Invoicing</h3>
+                <h3 className="text-lg font-bold">صورتحساب آسان</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Create professional invoices, get paid faster with online
-                  payment integration.
+                  فاکتورهای حرفه ای ایجاد کنید، با آنلاین سریعتر پرداخت کنید
+                  یکپارچه سازی پرداخت
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Expense Tracking</h3>
+                <h3 className="text-lg font-bold">ردیابی هزینه</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Keep tabs on your business no matter where you are. With
-                  expense tracking, you can keep the books balanced and buzzword
-                  compliant.
+                  بدون توجه به جایی که هستید، کسب و کار خود را دنبال کنید. با
+                  ردیابی هزینه، می توانید کتاب ها را متعادل نگه دارید و کلمات
+                  کلیدی را حفظ کنید سازگار.
                 </p>
               </div>
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Financial Reporting</h3>
+                <h3 className="text-lg font-bold">گزارش مالی</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Get a live view of all your numbers. Our reports dashboard
-                  lets you easily track cashflow, revenue, profit and loss, and
-                  more.
+                  یک نمای زنده از تمام شماره های خود دریافت کنید. داشبورد گزارش
+                  های ما به شما امکان می دهد به راحتی جریان نقدی، درآمد، سود و
+                  زیان و بیشتر.
                 </p>
               </div>
             </div>
@@ -134,13 +134,13 @@ export function Landing() {
                 className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="#"
               >
-                Get Started
+                شروع کنید
               </Link>
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                 href="#"
               >
-                Learn More
+                بیشتر بدانید
               </Link>
             </div>
           </div>
@@ -149,11 +149,11 @@ export function Landing() {
           <div className="container grid items-center justify-center gap-4 px-4 md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                What our customers say
+                آنچه مشتریان ما می گویند
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Don't just take our word for it. Our customers love the benefits
-                of using our platform.
+                فقط حرف ما را قبول نکنید. مشتریان ما مزایا استفاده از پلتفرم ما
+                را دوست دارند
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
@@ -173,8 +173,8 @@ export function Landing() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-500">
-                    "The platform is easy to use and has transformed the way we
-                    manage our finances. It's truly a game changer."
+                    "استفاده از این پلتفرم آسان است و نحوه مدیریت مالی ما را
+                    متحول کرده است. این واقعاً یک تغییر دهنده بازی است."
                   </p>
                 </CardContent>
               </Card>
@@ -185,24 +185,24 @@ export function Landing() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Ready to transform your business?
+                برای متحول کردن کسب و کار خود آماده اید؟
               </h2>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Start with our platform today and see the difference it makes to
-                your business.
+                همین امروز با پلتفرم ما شروع کنید و تفاوت آن را برای کسب و
+                کارتان ببینید.
               </p>
               <div className="space-x-4">
                 <Link
                   className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                   href="#"
                 >
-                  Get Started
+                  شروع کنید
                 </Link>
                 <Link
                   className="inline-flex h-9 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
                   href="#"
                 >
-                  Contact Us
+                  تماس با ما
                 </Link>
               </div>
             </div>
@@ -211,14 +211,14 @@ export function Landing() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          © Finance Co. All rights reserved.
+          © Vazir Co. تمامی حقوق محفوظ است.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Terms of Service
+            شرایط استفاده از خدمات
           </Link>
           <Link className="text-xs hover:underline underline-offset-4" href="#">
-            Privacy
+            حریم خصوصی
           </Link>
         </nav>
       </footer>
