@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 import "./globals.css";
+import AppBar from "@/components/component/appbar";
+import AppFooter from "@/components/component/appfooter";
 
 const vazirmatn = Vazirmatn({
   preload: true,
@@ -25,7 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={vazirmatn.className}>{children}</body>
+      <body className={vazirmatn.className}>
+        <AppBar />
+        <div className="relative">{children}</div>
+        <AppFooter />
+      </body>
     </html>
   );
 }

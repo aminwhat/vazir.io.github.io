@@ -11,12 +11,6 @@ export default function AppBar() {
       <nav className="ml-auto flex gap-4 sm:gap-6">
         <Link
           className="text-sm font-medium hover:underline underline-offset-4"
-          href="/about"
-        >
-          درباره ما
-        </Link>
-        <Link
-          className="text-sm font-medium hover:underline underline-offset-4"
           href="/contact-us"
         >
           تماس با ما
@@ -38,6 +32,12 @@ export default function AppBar() {
           href="/features"
         >
           ویژگی ها
+        </Link>
+        <Link
+          className="text-sm font-medium hover:underline underline-offset-4"
+          href="/"
+        >
+          خانه
         </Link>
       </nav>
     </header>
