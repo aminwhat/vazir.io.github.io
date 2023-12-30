@@ -23,6 +23,12 @@ export default function AppBar() {
         </Link>
         <Link
           className="text-sm font-medium hover:underline underline-offset-4"
+          href="/download"
+        >
+          دانلود
+        </Link>
+        <Link
+          className="text-sm font-medium hover:underline underline-offset-4"
           href="/prices"
         >
           قیمت ها
