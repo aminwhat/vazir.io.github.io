@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { AppLogo } from "@/components/component/applogo";
 
-export  function AppBar() {
+export function AppBar() {
   return (
     <header className="px-4 lg:px-6 h-14 flex items-center sticky top-0 z-50 bg-slate-50 border-y">
       <Link className="flex items-center justify-center" href="/">
