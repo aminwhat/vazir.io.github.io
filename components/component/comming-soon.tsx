@@ -53,7 +53,7 @@ export function CommingSoon() {
           <Link
             className="text-gray-900 dark:text-white"
             target="_blank"
-            href="https://Instagram.com/vazir_io"
+            href="https://t.me/vazir_io"
           >
             <TelegramIcon className="h-6 w-6" />
           </Link>
