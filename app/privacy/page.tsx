@@ -1,7 +1,5 @@
+import { CommingSoon } from "@/components/component/comming-soon";
+
 export default function PrivacyPage() {
-  return (
-    <center>
-      <h1>Privacy Page</h1>
-    </center>
-  );
+  return <CommingSoon />;
 }

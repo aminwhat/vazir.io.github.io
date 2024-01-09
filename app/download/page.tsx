@@ -1,7 +1,5 @@
+import { CommingSoon } from "@/components/component/comming-soon";
+
 export default function DownloadPage() {
-  return (
-    <center>
-      <h1>Download Page</h1>
-    </center>
-  );
+  return <CommingSoon />;
 }

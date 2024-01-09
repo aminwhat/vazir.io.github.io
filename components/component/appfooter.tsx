@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AppLogo } from "./applogo";
 
 export function AppFooter() {
   return (
@@ -6,6 +7,19 @@ export function AppFooter() {
       <p className="text-xs text-gray-500 dark:text-gray-400">
         © Vazir Co. تمامی حقوق محفوظ است.
       </p>
+
+      <center className="w-full">
+        <a
+          className="flex items-center justify-center"
+          href="/"
+          rel="Vazir Cloud App"
+          target="_blank"
+        >
+          <div className="pr-2">Powered by</div>
+          <AppLogo className="h-11 w-11" />
+        </a>
+      </center>
+
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
         <Link
           className="text-xs hover:underline underline-offset-4"
