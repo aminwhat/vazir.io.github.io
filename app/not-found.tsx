@@ -1,15 +1,8 @@
-export default function NotFound() {
+export default function NotFound(props: any) {
   const emoji = Emoji();
   return (
-    <div
-      style={{
-        position: "absolute",
-        left: "50%",
-        top: "50%",
-        transform: "translate(-50%, -50%)",
-      }}
-    >
-      <center className="divide-y">
+    <div {...props}>
+      <center className="pt-40 pb-36">
         <div className="pb-9 md:text-9xl max-[760px]:text-5xl text-gray-500">
           {emoji}
         </div>
