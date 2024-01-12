@@ -53,7 +53,7 @@ export function NavBar() {
       <Link className="flex items-center gap-2" href="/">
         <AppLogo className="h-9 w-9" />
         <span className=" md:text-lg font-semibold sm:text-sm text-right">
-          نرم افزار ابری حسابداری وزیر
+          پلتفرم مالی وزیر
         </span>
       </Link>
     </div>
