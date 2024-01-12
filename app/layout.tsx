@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     type: "article",
     countryName: "Iran",
     locale: "fa",
+    alternateLocale: ["en"],
     siteName: "وزیر",
     title: "پلتفرم مالی وزیر",
     url: "https://vazir.io",
