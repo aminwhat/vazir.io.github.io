@@ -1,17 +1,15 @@
-export default function NotFound(props: any) {
+export default function NotFound() {
   const emoji = Emoji();
   return (
-    <div {...props}>
-      <center className="pt-40 pb-36">
-        <div className="pb-9 md:text-9xl max-[760px]:text-5xl text-gray-500">
-          {emoji}
-        </div>
-        <div className="md:text-4xl max-[760px]:text-3xl">
-          <h1 className="pt-9">صفحه مورد نظر یافت نشد</h1>
-          <h1 className="pt-9 text-red-500">404</h1>
-        </div>
-      </center>
-    </div>
+    <center className="pt-40 pb-36">
+      <div className="pb-9 md:text-9xl max-[760px]:text-5xl text-gray-500">
+        {emoji}
+      </div>
+      <div className="md:text-4xl max-[760px]:text-3xl">
+        <h1 className="pt-9">صفحه مورد نظر یافت نشد</h1>
+        <h1 className="pt-9 text-red-500">404</h1>
+      </div>
+    </center>
   );
 }
 
