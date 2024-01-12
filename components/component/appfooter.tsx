@@ -43,9 +43,9 @@ export function AppFooter() {
           </Link>
         </nav>
       </footer>
-      {/* <center>
+      <center>
         <FooterAnimation className="md:w-1/4 pt-32" />
-      </center> */}
+      </center>
     </div>
   );
 }
