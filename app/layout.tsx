@@ -13,12 +13,33 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "نرم افزار ابری وزیر",
-  description: "Vazir Inc.",
-  applicationName: "Vazir",
-  authors: { name: "Vazir", url: "https://vazir.io" },
-  creator: "Vazir",
-  publisher: "Vazir",
+  title: "نرم افزار مالی وزیر",
+  description: "پلتفرمی ابری برای مدیریت و تحلیل سیستم های حسابداری و مالی",
+  applicationName: "پلتفرم مالی وزیر",
+  authors: { name: "وزیر", url: "https://vazir.io" },
+  creator: "وزیر",
+  publisher: "وزیر",
+  keywords: [
+    "نرم افزار مالی وزیر",
+    "پلتفرم مالی وزیر",
+    "نرم افزار حسابداری وزیر",
+    "نرم افزار حسابداری",
+    "نرم افزار",
+    "حسابداری",
+    "وزیر",
+    "مالی",
+    "ابری",
+  ],
+  abstract: "پلتفرمی ابری برای مدیریت و تحلیل سیستم های حسابداری و مالی",
+  category: "مالی و حسابداری",
+  openGraph: {
+    type: "article",
+    countryName: "Iran",
+    locale: "fa",
+    siteName: "وزیر",
+    title: "پلتفرم مالی وزیر",
+    url: "https://vazir.io",
+  },
 };
 
 export default function RootLayout({
@@ -28,15 +49,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <head>
-        <title>پلتفرم مالی وزیر</title>
-        <meta property="og:site_name" content="نرم افزار مالی وزیر" />
-        <meta
-          property="og:description"
-          content="پلتفرمی برای مدیریت سیستم مالی و ساختار آن"
-        />
-        <meta property="og:locale" content="fa" />
-      </head>
       <body className={vazirmatn.className}>
         <NavBar />
         <div className="relative">{children}</div>
