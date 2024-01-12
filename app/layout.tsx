@@ -27,9 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fa">
       <head>
         <title>پلتفرم مالی وزیر</title>
+        <meta property="og:site_name" content="نرم افزار مالی وزیر" />
+        <meta
+          property="og:description"
+          content="پلتفرمی برای مدیریت سیستم مالی و ساختار آن"
+        />
+        <meta property="og:locale" content="fa" />
       </head>
       <body className={vazirmatn.className}>
         <NavBar />
