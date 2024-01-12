@@ -28,6 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>پلتفرم مالی وزیر</title>
+      </head>
       <body className={vazirmatn.className}>
         <NavBar />
         <div className="relative">{children}</div>
