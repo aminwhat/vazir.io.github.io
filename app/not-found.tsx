@@ -1,3 +1,5 @@
+"use client";
+
 export default function NotFound() {
   const emoji = Emoji();
   return (
