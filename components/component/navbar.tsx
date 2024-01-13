@@ -42,9 +42,6 @@ export function NavBar() {
         <Link className="text-sm hover:underline" href="/download">
           دانلود
         </Link>
-        <Link className="text-sm hover:underline" href="/plans">
-          پلن ها
-        </Link>
         <Link className="text-sm hover:underline" href="/features">
           ویژگی ها
         </Link>

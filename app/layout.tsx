@@ -56,7 +56,6 @@ export default function RootLayout({
         <div className="relative">{children}</div>
         <AppFooter />
       </body>
-      {/* <GoogleTagManager gtmId="GTM-WP8CTMBM" /> */}
       <GoogleTagManager gtmId="G-759R6BVQCC" />
     </html>
   );
