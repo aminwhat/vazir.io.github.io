@@ -33,6 +33,10 @@ export const metadata: Metadata = {
   ],
   abstract: "پلتفرمی ابری برای مدیریت و تحلیل سیستم های حسابداری و مالی",
   category: "مالی و حسابداری",
+  metadataBase: new URL("https://vazir.io"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "article",
     countryName: "Iran",
