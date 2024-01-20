@@ -161,7 +161,7 @@ function CloudIcon(props: any) {
  * @see https://v0.dev/t/rLx3FvtvdE3
  */
 
-export function FeaturesBody() {
+function FeaturesBody() {
   return (
     // <div className="flex flex-col min-h-screen">
     <main className="flex-1 bg-gray-100 dark:bg-gray-900 py-10">
