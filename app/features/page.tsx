@@ -3,6 +3,7 @@
  * @see https://v0.dev/t/QBjPiSJNuE4
  */
 import { FeaturesAnimation } from "@/components/component/features-animation";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function FeaturesPage() {
@@ -39,7 +40,7 @@ export default function FeaturesPage() {
                 تمام نیازهای حسابداری خود را با ابزار جامع ما مدیریت کنید
               </p>
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="/learn-more"
               >
                 بیشتر بدانید
@@ -52,7 +53,7 @@ export default function FeaturesPage() {
                 گزارش های مالی دقیق خود را با سهولت ایجاد کنید
               </p>
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="/learn-more"
               >
                 بیشتر بدانید
@@ -66,7 +67,7 @@ export default function FeaturesPage() {
                 برنامه ریزی کنید
               </p>
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="/learn-more"
               >
                 بیشتر بدانید
@@ -79,7 +80,7 @@ export default function FeaturesPage() {
                 داده های شما هیچوقت از دست نخواهد رفت
               </p>
               <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="/learn-more"
               >
                 بیشتر بدانید
@@ -88,6 +89,7 @@ export default function FeaturesPage() {
           </div>
         </div>
       </section>
+      <FeaturesBody />
     </center>
   );
 }
@@ -150,6 +152,211 @@ function CloudIcon(props: any) {
     >
       <path d="M16 7.5a2.5 2.5 0 0 1-1.456 2.272 3.5 3.5 0 0 0-.65-.824 1.5 1.5 0 0 0-.789-2.896.5.5 0 0 1-.627-.421 3 3 0 0 0-5.22-1.625 5.6 5.6 0 0 0-1.276.088 4.002 4.002 0 0 1 7.392.91A2.5 2.5 0 0 1 16 7.5" />
       <path d="M7 5a4.5 4.5 0 0 1 4.473 4h.027a2.5 2.5 0 0 1 0 5H3a3 3 0 0 1-.247-5.99A4.5 4.5 0 0 1 7 5m3.5 4.5a3.5 3.5 0 0 0-6.89-.873.5.5 0 0 1-.51.375A2 2 0 1 0 3 13h8.5a1.5 1.5 0 1 0-.376-2.953.5.5 0 0 1-.624-.492z" />
+    </svg>
+  );
+}
+
+/**
+ * This code was generated by v0 by Vercel.
+ * @see https://v0.dev/t/rLx3FvtvdE3
+ */
+
+export function FeaturesBody() {
+  return (
+    // <div className="flex flex-col min-h-screen">
+    <main className="flex-1 bg-gray-100 dark:bg-gray-900 py-10">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <RadarIcon className="h-12 w-12 mb-4 text-gray-900 dark:text-gray-100" />
+            <h3 className="text-xl font-bold mb-2">Real-time Reporting</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Get insights into your financial data in real-time with our
+              powerful reporting tools.
+            </p>
+            <Button className="w-full">Learn More</Button>
+          </div>
+          <div className="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <ReceiptIcon className="h-12 w-12 mb-4 text-gray-900 dark:text-gray-100" />
+            <h3 className="text-xl font-bold mb-2">Automated Invoicing</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Automate your invoicing process and get paid faster with less
+              effort.
+            </p>
+            <Button className="w-full">Learn More</Button>
+          </div>
+          <div className="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <WalletIcon className="h-12 w-12 mb-4 text-gray-900 dark:text-gray-100" />
+            <h3 className="text-xl font-bold mb-2">Expense Tracking</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Keep track of your expenses and understand where your money is
+              going.
+            </p>
+            <Button className="w-full">Learn More</Button>
+          </div>
+          <div className="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <CurrencyIcon className="h-12 w-12 mb-4 text-gray-900 dark:text-gray-100" />
+            <h3 className="text-xl font-bold mb-2">Multi-currency Support</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Manage transactions in multiple currencies without any hassle.
+            </p>
+            <Button className="w-full">Learn More</Button>
+          </div>
+          <div className="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <BanknoteIcon className="h-12 w-12 mb-4 text-gray-900 dark:text-gray-100" />
+            <h3 className="text-xl font-bold mb-2">Bank Reconciliation</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Easily reconcile your bank statements with your accounting
+              records.
+            </p>
+            <Button className="w-full">Learn More</Button>
+          </div>
+          <div className="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <LayoutDashboardIcon className="h-12 w-12 mb-4 text-gray-900 dark:text-gray-100" />
+            <h3 className="text-xl font-bold mb-2">Customizable Dashboards</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              Customize your dashboard to get the information that matters to
+              you at a glance.
+            </p>
+            <Button className="w-full">Learn More</Button>
+          </div>
+        </div>
+      </div>
+    </main>
+    // </div>
+  );
+}
+
+function RadarIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M19.07 4.93A10 10 0 6.99 3.34" />
+      <path d="M4 6h.01" />
+      <path d="M2.29 9.62A10 10 0 1 21.31 8.35" />
+      <path d="M16.24 7.76A6 6 0 1 8.23 16.67" />
+      <path d="M12 18h.01" />
+      <path d="M17.99 11.66A6 6 0 1 15.77 16.67" />
+      <circle cx="12" cy="12" r="2" />
+      <path d="m13.41 10.59 5.66-5.66" />
+    </svg>
+  );
+}
+
+function ReceiptIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M4 2v20l2-1 2 1 2-1 1V2l-2 1-2-1-2 1-2-1Z" />
+      <path d="M16 8h-6a2 2 0 1 4h4a2 4H8" />
+      <path d="M12 17V7" />
+    </svg>
+  );
+}
+
+function WalletIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M21 12V7H5a2 2 0 1 0-4h14v4" />
+      <path d="M3 5v14a2 2 0 2h16v-5" />
+      <path d="M18 12a2 2 0 4h4v-4Z" />
+    </svg>
+  );
+}
+
+function CurrencyIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="8" />
+      <line x1="3" x2="6" y1="3" y2="6" />
+      <line x1="21" x2="18" y1="3" y2="6" />
+      <line x1="3" x2="6" y1="21" y2="18" />
+      <line x1="21" x2="18" y1="21" y2="18" />
+    </svg>
+  );
+}
+
+function BanknoteIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="12" x="2" y="6" rx="2" />
+      <circle cx="12" cy="12" r="2" />
+      <path d="M6 12h.01M18 12h.01" />
+    </svg>
+  );
+}
+
+function LayoutDashboardIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="7" height="9" x="3" y="3" rx="1" />
+      <rect width="7" height="5" x="14" y="3" rx="1" />
+      <rect width="7" height="9" x="14" y="12" rx="1" />
+      <rect width="7" height="5" x="3" y="16" rx="1" />
     </svg>
   );
 }
