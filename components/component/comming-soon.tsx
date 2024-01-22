@@ -7,9 +7,35 @@ import { ResponsiveLine } from "@nivo/line";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { AppLogo } from "./applogo";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 export function CommingSoon() {
+  let inputVal: string;
+  const router = useRouter();
+
+  async function onBtnPressed() {
+    if (inputVal) {
+      const ipify = await axios.get("https://api.ipify.org/?format=json");
+      const ip = ipify.data.ip;
+
+      window.alert("ip: " + ip);
+
+      const result = await axios.post(
+        process.env.NODE_ENV == "production"
+          ? "https://api.vazir.io/api/comming-soon"
+          : "http://localhost:3779/api/comming-soon",
+        {
+          phoneNumber: inputVal,
+          ip: ip,
+        }
+      );
+      window.alert(result);
+
+      router.push("/");
+    }
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-[#f5f5f5]">
       <main className="flex flex-col items-center justify-center flex-1 text-center p-10">
@@ -31,9 +57,23 @@ export function CommingSoon() {
             <Input
               className="max-w-lg flex-1"
               placeholder="شماره موبایل خود را وارد کنید"
-              type="email"
+              type="tel"
+              required
+              inputMode="tel"
+              maxLength={11}
+              onKeyPress={(event) => {
+                if (!/[0-9]/.test(event.key)) {
+                  event.preventDefault();
+                }
+              }}
+              value={inputVal}
+              onChange={(env) => {
+                inputVal = env.target.value;
+              }}
             />
-            <Button type="submit">ثبت</Button>
+            <Button type="button" onClick={onBtnPressed}>
+              ثبت
+            </Button>
           </form>
         </div>
         <div className="mt-8 flex space-x-4">
