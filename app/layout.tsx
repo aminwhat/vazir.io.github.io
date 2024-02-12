@@ -15,7 +15,7 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "نرم افزار مالی وزیر",
+  title: "پلتفرم مالی وزیر",
   description: "پلتفرمی ابری برای مدیریت و تحلیل سیستم های حسابداری و مالی",
   applicationName: "پلتفرم مالی وزیر",
   authors: { name: "وزیر", url: "https://vazir.io" },

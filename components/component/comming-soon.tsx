@@ -39,6 +39,9 @@ export function CommingSoon() {
   return (
     <div className="flex flex-col min-h-screen bg-[#f5f5f5]">
       <main className="flex flex-col items-center justify-center flex-1 text-center p-10">
+        <p className="text-gray-500 dark:text-gray-400 mb-2">
+          {document.title}
+        </p>
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
           ...بزودی
         </h1>

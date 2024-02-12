@@ -14,7 +14,7 @@ import { AppLogo } from "./applogo";
 
 export function NavBar() {
   return (
-    <div className="flex max-[420px]:flex-col max-[420px]:space-y-3 items-center justify-between p-4 max-[420px]:pt-1 bg-white dark:bg-gray-800 sticky top-0 z-50 border-b">
+    <div className="flex max-[420px]:flex-col max-[420px]:space-y-3 items-center justify-between p-4 max-[420px]:pt-1 bg-white dark:bg-gray-800 min-[420px]:sticky top-0 z-50 border-b">
       <DropdownMenu>
         <DropdownMenuTrigger asChild className="max-[420px]:hidden">
           <button className="px-4 py-2 text-sm font-semibold bg-gray-200 dark:bg-gray-700 rounded hover:bg-gray-300 dark:hover:bg-gray-600">
@@ -38,6 +38,9 @@ export function NavBar() {
       <nav className="flex items-center gap-5 md:pl-14 sm:pl-12">
         <Link className="text-sm hover:underline" href="/contact">
           تماس با ما
+        </Link>
+        <Link className="text-sm hover:underline" href="/blog">
+          بلاگ
         </Link>
         <Link className="text-sm hover:underline" href="/download">
           دانلود
