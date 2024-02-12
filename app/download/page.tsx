@@ -1,9 +1,12 @@
 import Link from "next/link";
 import {
+  CodeIcon,
   DateIcon,
   FileIcon,
   GearIcon,
+  GlobeIcon,
   InfoIcon,
+  LockIcon,
   PenIcon,
   WindowsIcon,
 } from "@/components/icon/index";
@@ -23,27 +26,36 @@ export default function DownloadPage() {
         <div className="container px-4 md:px-6">
           <div className="grid max-w-sm gap-2 items-start text-center sm:max-w-2xl sm:grid-cols-2 md:gap-4 md:max-w-4xl md:mx-auto lg:grid-cols-3 lg:max-w-5xl lg:gap-8">
             <div className="flex flex-col gap-1">
-              <h3 className="text-lg font-bold">New Features</h3>
+              <h3 className="text-lg font-bold flex flex-row justify-center">
+                <LockIcon />
+                کاملا امن
+              </h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                - Introduces a new dark mode option for the app interface. -
-                Adds support for emoji reactions in the chat feature. - Includes
-                performance improvements for smoother navigation.
+                تمام داده و اطلاعات محرمانه و شخصی شما توسط پلتفرم به صورت بسیار
+                پیشرفته رمزگذاری میشنود - این شما هستید که تصمیم میگیرید داده ها
+                در کجا مورد بررسی و بازنشر قرار بگیرند
               </p>
             </div>
             <div className="grid gap-1">
-              <h3 className="text-lg font-bold">Bug Fixes</h3>
+              <h3 className="text-lg font-bold flex flex-row justify-center">
+                <CodeIcon className="pr-1" />
+                در دست توسعه
+              </h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                - Resolves an issue with image loading in the gallery. - Fixes a
-                bug causing occasional crashes during video playback. -
-                Addresses problems related to syncing data across devices.
+                در حال حاضر نرم افزار وزیر در حالت توسعه هست - بدین معناست که
+                نرم افزار کاملا بی نقص و عاری از عیب نیست - برای همین منظور ما
+                از هرگونه پیشنهاد و گزارش باگ استقبال خواهیم کرد
               </p>
             </div>
             <div className="grid gap-1">
-              <h3 className="text-lg font-bold">Bug Fixes</h3>
+              <h3 className="text-lg font-bold flex flex-row justify-center">
+                <GlobeIcon />
+                رایگان برای پروژه های کوچک و شخصی
+              </h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                - Resolves an issue with image loading in the gallery. - Fixes a
-                bug causing occasional crashes during video playback. -
-                Addresses problems related to syncing data across devices.
+                پلتفرم مالی وزیر برای تمام مشاغل کوچک و شخصی که به صورت تک
+                کاربره هستند رایگان بوده و خواهد بود - درصورت نیاز به پلن چند
+                کاربره باید مشترک سرویس های مناسب کسب و کار های ما شوید
               </p>
             </div>
           </div>
