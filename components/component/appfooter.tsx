@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AppLogo } from "./applogo";
 import { FooterAnimation } from "./footer-animation";
+import { appVersion } from "@/lib/constants";
 
 export function AppFooter() {
   return (
@@ -43,8 +44,15 @@ export function AppFooter() {
           </Link>
         </nav>
       </footer>
-      <center>
+      <center className="pb-14">
         <FooterAnimation className="md:w-1/4 pt-32" />
+        <a
+          href="https://github.com/aminwhat/vazir.io.github.io/releases"
+          target="_blank"
+          className="text-sm underline text-slate-400 p-2 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 hover:bg-gray-100 rounded-lg"
+        >
+          {appVersion}
+        </a>
       </center>
     </div>
   );
