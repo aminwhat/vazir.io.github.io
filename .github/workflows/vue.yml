@@ -6,15 +6,6 @@ on:
   pull_request:
     branches: ['master']
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: 'pages'
-  cancel-in-progress: false
-
 jobs:
   build_vue:
     runs-on: ubuntu-latest
@@ -27,3 +18,5 @@ jobs:
           username: 'aminwhat'
           reponame: 'vazir.io.github.io'
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+          gitemail: 'm.aminwhat@gmail.com'
+          cname: 'vazir.io'
