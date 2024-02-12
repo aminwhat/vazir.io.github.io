@@ -80,7 +80,7 @@ const addJsonLd = () => {
       "@context" : "https://schema.org",
       "@type" : "WebSite",
       "name" : "پلتفرم مالی وزیر",
-      "alternateName" : "vzr",
+      "alternateName": ["vzr", "Vazir", "vazir","پلتفرم","مالی","پلتفرم مالی","وزیر","پلتفرم وزیر","پلتفرم مالی وزیر"],
       "url" : "https://vazir.io/",
     }
     `,

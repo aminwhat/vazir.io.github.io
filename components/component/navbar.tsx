@@ -14,9 +14,9 @@ import { AppLogo } from "./applogo";
 
 export function NavBar() {
   return (
-    <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 sticky top-0 z-50 border-b">
+    <div className="flex max-[420px]:flex-col max-[420px]:space-y-3 items-center justify-between p-4 max-[420px]:pt-1 bg-white dark:bg-gray-800 sticky top-0 z-50 border-b">
       <DropdownMenu>
-        <DropdownMenuTrigger asChild>
+        <DropdownMenuTrigger asChild className="max-[420px]:hidden">
           <button className="px-4 py-2 text-sm font-semibold bg-gray-200 dark:bg-gray-700 rounded hover:bg-gray-300 dark:hover:bg-gray-600">
             مستندات و راهنما
           </button>
@@ -47,7 +47,7 @@ export function NavBar() {
         </Link>
       </nav>
 
-      <Link className="flex items-center gap-2" href="/">
+      <Link className="flex items-center gap-2 max-[420px]:-order-1" href="/">
         <AppLogo className="h-9 w-9" />
         <span className=" md:text-lg font-semibold sm:text-sm text-right">
           پلتفرم مالی وزیر
