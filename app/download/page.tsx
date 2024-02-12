@@ -6,11 +6,17 @@ import {
   PenIcon,
   WindowsIcon,
 } from "@/components/icon/index";
+import { CubeTransformerAnimation } from "@/components/anim";
 
 export default function DownloadPage() {
   return (
     <center>
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full pb-12">
+        <CubeTransformerAnimation className="md:w-1/4" />
+        <h1 className="text-3xl font-bold pb-6 text-yellow-600 underline flex flex-row justify-center">
+          <div>test</div>
+          نکات قبل از دانلود
+        </h1>
         <div className="container px-4 md:px-6">
           <div className="grid max-w-sm gap-2 items-start text-center sm:max-w-2xl sm:grid-cols-2 md:gap-4 md:max-w-4xl md:mx-auto lg:grid-cols-3 lg:max-w-5xl lg:gap-8">
             <div className="flex flex-col gap-1">

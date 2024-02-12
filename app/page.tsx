@@ -7,7 +7,7 @@ import {
   CardContent,
   Card,
 } from "@/components/ui/card";
-import { LandingAnimation } from "@/components/component/landing-animation";
+import { CalculateAnimation } from "@/components/anim/index";
 
 export default function Home() {
   return (
@@ -43,7 +43,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <LandingAnimation className="md:w-1/2" />
+              <CalculateAnimation className="md:w-1/2" />
             </div>
           </section>
           <section className="w-full py-12 md:py-24 lg:py-32">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AppLogo } from "./applogo";
-import { FooterAnimation } from "./footer-animation";
+import { PersonAnimation } from "../anim/index";
 import { appVersion } from "@/lib/constants";
 
 export function AppFooter() {
@@ -45,7 +45,7 @@ export function AppFooter() {
         </nav>
       </footer>
       <center className="pb-14">
-        <FooterAnimation className="md:w-1/4 pt-32" />
+        <PersonAnimation className="md:w-1/4 pt-32" />
         <a
           rel="Vazir Financial Platform Website Release"
           href="https://github.com/aminwhat/vazir.io.github.io/releases"
