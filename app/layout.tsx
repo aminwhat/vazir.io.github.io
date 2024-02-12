@@ -5,6 +5,7 @@ import "./globals.css";
 import { NavBar } from "@/components/component/navbar";
 import { AppFooter } from "@/components/component/appfooter";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Head from "next/head";
 
 const vazirmatn = Vazirmatn({
   preload: true,
@@ -55,6 +56,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
+      <Head>
+        <script
+          type="application/ld+json"
+          key="item-jsonld"
+          dangerouslySetInnerHTML={addJsonLd()}
+        />
+      </Head>
       <body className={vazirmatn.className}>
         <NavBar />
         <div className="relative">{children}</div>
@@ -64,3 +72,17 @@ export default function RootLayout({
     </html>
   );
 }
+
+const addJsonLd = () => {
+  return {
+    __html: `
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "پلتفرم مالی وزیر",
+      "alternateName" : "vzr",
+      "url" : "https://vazir.io/",
+    }
+    `,
+  };
+};

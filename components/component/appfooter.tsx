@@ -47,6 +47,7 @@ export function AppFooter() {
       <center className="pb-14">
         <FooterAnimation className="md:w-1/4 pt-32" />
         <a
+          rel="Vazir Financial Platform Website Release"
           href="https://github.com/aminwhat/vazir.io.github.io/releases"
           target="_blank"
           className="text-sm underline text-slate-400 p-2 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 hover:bg-gray-100 rounded-lg"
