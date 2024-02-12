@@ -3,6 +3,7 @@ import {
   DateIcon,
   FileIcon,
   GearIcon,
+  InfoIcon,
   PenIcon,
   WindowsIcon,
 } from "@/components/icon/index";
@@ -13,10 +14,12 @@ export default function DownloadPage() {
     <center>
       <section className="w-full pb-12">
         <CubeTransformerAnimation className="md:w-1/4" />
-        <h1 className="text-3xl font-bold pb-6 text-yellow-600 underline flex flex-row justify-center">
-          <div>test</div>
-          نکات قبل از دانلود
-        </h1>
+        <div className="pb-6 flex flex-row justify-center font-bold">
+          <InfoIcon className="size-8 text-red-600" />
+          <h1 className="text-3xl text-yellow-600 underline">
+            نکات قبل از دانلود
+          </h1>
+        </div>
         <div className="container px-4 md:px-6">
           <div className="grid max-w-sm gap-2 items-start text-center sm:max-w-2xl sm:grid-cols-2 md:gap-4 md:max-w-4xl md:mx-auto lg:grid-cols-3 lg:max-w-5xl lg:gap-8">
             <div className="flex flex-col gap-1">
@@ -48,14 +51,16 @@ export default function DownloadPage() {
       </section>
       <ReleaseVersion
         latest={true}
-        size="24.5 MB"
-        date="May 30, 2023"
+        size="12.7 MB"
+        date="Nov 6, 2023"
         name="Vazir Hessab"
         version="0.0.1"
         description="The best version of the app yet, with new features, performance
               improvements, and bug fixes."
         os="Windows 10 & 11"
         permissions="حافظه داخلی, اینترنت"
+        download_link="https://github.com/aminwhat/hessab-download/releases/download/Financial-Platform-Init/Vazir.Hessab.exe"
+        changes_link="https://github.com/aminwhat/hessab-download/releases/tag/Financial-Platform-Init"
       />
     </center>
   );
@@ -69,7 +74,7 @@ function ReleaseVersion(options?: ReleaseVersionOptions) {
           <div className="space-y-2">
             {options.latest ? (
               <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                Latest Version
+                آخرین نسخه
               </div>
             ) : null}
             <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl">
