@@ -71,8 +71,8 @@ export default function DownloadPage() {
               improvements, and bug fixes."
         os="Windows 10 & 11"
         permissions="حافظه داخلی, اینترنت"
-        download_link="https://github.com/aminwhat/hessab-download/releases/download/Financial-Platform-Init/Vazir.Hessab.exe"
-        changes_link="https://github.com/aminwhat/hessab-download/releases/tag/Financial-Platform-Init"
+        download_link="https://github.com/aminwhat/vazir_hessab/releases/download/0.0.1/Vazir.Hessab.exe"
+        changes_link="https://github.com/aminwhat/vazir_hessab/releases/tag/0.0.1"
       />
     </center>
   );
