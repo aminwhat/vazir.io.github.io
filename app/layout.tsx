@@ -57,11 +57,10 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <Head>
-        <script
-          type="application/ld+json"
-          key="item-jsonld"
-          dangerouslySetInnerHTML={addJsonLd()}
-        />
+        <meta property="og:title" content="پلتفرم مالی وزیر" />
+        <meta property="og:site_name" content="پلتفرم مالی وزیر" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fa_ir" />
       </Head>
       <body className={vazirmatn.className}>
         <NavBar />
@@ -72,17 +71,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-const addJsonLd = () => {
-  return {
-    __html: `
-    {
-      "@context" : "https://schema.org",
-      "@type" : "WebSite",
-      "name" : "پلتفرم مالی وزیر",
-      "alternateName": ["vzr", "Vazir", "vazir","پلتفرم","مالی","پلتفرم مالی","وزیر","پلتفرم وزیر","پلتفرم مالی وزیر"],
-      "url" : "https://vazir.io/",
-    }
-    `,
-  };
-};
