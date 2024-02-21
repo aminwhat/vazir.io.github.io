@@ -115,7 +115,7 @@ export default function Home() {
                   ما را دوست دارند
                 </p>
               </div>
-              <div className="mx-auto w-full max-w-sm space-y-2">
+              {/* <div className="mx-auto w-full max-w-sm space-y-2">
                 <Card className="p-4 bg-white">
                   <CardHeader>
                     <div className="flex items-center space-x-2">
@@ -137,7 +137,7 @@ export default function Home() {
                     </p>
                   </CardContent>
                 </Card>
-              </div>
+              </div> */}
             </div>
           </section>
           <section className="w-full py-12 md:py-24 lg:py-32">

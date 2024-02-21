@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 import "./globals.css";
-// import { AppBar } from "@/components/component/appbar";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { NavBar } from "@/components/component/navbar";
 import { AppFooter } from "@/components/component/appfooter";
-import { GoogleTagManager } from "@next/third-parties/google";
-import Head from "next/head";
 
 const vazirmatn = Vazirmatn({
   preload: true,
@@ -39,12 +37,14 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    type: "article",
+    type: "website",
     countryName: "Iran",
-    locale: "fa",
+    locale: "fa_ir",
     alternateLocale: ["en"],
     siteName: "پلتفرم مالی وزیر",
     title: "پلتفرم مالی وزیر",
+    description:
+      "پلتفرم مالی وزیر, تنها پلتفرم جامع و کامل برای حسابداری و مدیریت مالی",
     url: "https://vazir.io",
   },
 };
@@ -56,12 +56,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <Head>
-        <meta property="og:title" content="پلتفرم مالی وزیر" />
-        <meta property="og:site_name" content="پلتفرم مالی وزیر" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="fa_ir" />
-      </Head>
       <body className={vazirmatn.className}>
         <NavBar />
         <div className="relative">{children}</div>

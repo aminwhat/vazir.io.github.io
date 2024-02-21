@@ -19,7 +19,7 @@ export default function DownloadPage() {
         <CubeTransformerAnimation className="md:w-1/4" />
         <div className="pb-6 flex flex-row justify-center font-bold">
           <InfoIcon className="size-8 text-red-600" />
-          <h1 className="text-3xl text-yellow-600 underline">
+          <h1 className="text-3xl text-sky-500 underline pl-4">
             نکات قبل از دانلود
           </h1>
         </div>
@@ -65,10 +65,9 @@ export default function DownloadPage() {
         latest={true}
         size="12.7 MB"
         date="Nov 6, 2023"
-        name="Vazir Hessab"
+        name="Vazir Financial Platform"
         version="0.0.1"
-        description="The best version of the app yet, with new features, performance
-              improvements, and bug fixes."
+        description="آخرین نسخه پلتفرم مالی وزیر شامل ویژگی های جدید, بهبود سرعت و رفع باگ"
         os="Windows 10 & 11"
         permissions="حافظه داخلی, اینترنت"
         download_link="https://github.com/aminwhat/vazir_hessab/releases/download/0.0.1/Vazir.Hessab.exe"
@@ -92,7 +91,7 @@ function ReleaseVersion(options?: ReleaseVersionOptions) {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl">
               {options.name} {options.version}
             </h1>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 pb-3">
               {options.description}
             </p>
           </div>
@@ -145,7 +144,7 @@ function ReleaseVersion(options?: ReleaseVersionOptions) {
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-blue-900/90  focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
               href={options.download_link ?? "#"}
               target="_blank"
             >
