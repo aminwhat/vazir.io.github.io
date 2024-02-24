@@ -24,8 +24,8 @@ export function CommingSoon() {
 
       const result = await axios.post(
         process.env.NODE_ENV == "production"
-          ? "https://api.vazir.io/api/comming-soon"
-          : "http://localhost:3779/api/comming-soon",
+          ? "https://api.vazir.io/v0/api/comming-soon"
+          : "http://localhost:3779/v0/api/comming-soon",
         {
           phoneNumber: inputVal,
           ip: ip,
