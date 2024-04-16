@@ -11,6 +11,7 @@ import {
   WindowsIcon,
 } from "@/components/icon/index";
 import { CubeTransformerAnimation } from "@/components/anim";
+import { CommingSoon } from "@/components/component/comming-soon";
 
 export default function DownloadPage() {
   return (
@@ -61,7 +62,7 @@ export default function DownloadPage() {
           </div>
         </div>
       </section>
-      <ReleaseVersion
+      {/* <ReleaseVersion
         latest={true}
         size="12.7 MB"
         date="Nov 6, 2023"
@@ -72,7 +73,8 @@ export default function DownloadPage() {
         permissions="حافظه داخلی, اینترنت"
         download_link="https://github.com/aminwhat/vazir_hessab/releases/download/0.0.1/Vazir.Hessab.exe"
         changes_link="https://github.com/aminwhat/vazir_hessab/releases/tag/0.0.1"
-      />
+      /> */}
+      <CommingSoon />
     </center>
   );
 }
