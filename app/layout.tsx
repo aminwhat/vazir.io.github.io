@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { NavBar } from "@/components/component/navbar";
-import { AppFooter } from "@/components/component/appfooter";
 
 const vazirmatn = Vazirmatn({
   preload: true,
@@ -57,9 +55,7 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <body className={vazirmatn.className}>
-        <NavBar />
         <div className="relative">{children}</div>
-        <AppFooter />
       </body>
       <GoogleTagManager gtmId="G-759R6BVQCC" />
     </html>
